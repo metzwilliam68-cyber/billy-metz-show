@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Billy Metz Show | Living With Dignity (Preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Archivo:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B111D; --bg2:#111A2B; --line:rgba(238,230,211,.14);
+  --text:#EEE6D3; --muted:#A3AEC2; --accent:#7FB2D9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:"Archivo",system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.kicker{font-family:"Oswald",sans-serif;font-weight:500;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--accent)}
+h1,h2,h3{font-family:"Oswald",sans-serif;font-weight:600;text-transform:uppercase;line-height:1;letter-spacing:.01em}
+h2{font-size:clamp(40px,6vw,72px);margin:14px 0 22px}
+.serif{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:500;text-transform:none;letter-spacing:0}
+.lead{color:var(--muted);max-width:640px;font-size:18px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:"Oswald",sans-serif;font-weight:500;font-size:15px;letter-spacing:.18em;text-transform:uppercase;padding:16px 28px;border:1px solid var(--text);transition:.2s}
+.btn.solid{background:var(--text);color:var(--bg)}
+.btn.solid:hover{background:var(--accent);border-color:var(--accent)}
+.btn.ghost:hover{background:rgba(238,230,211,.08)}
+section{padding:110px 0;border-top:1px solid var(--line)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:10;background:rgba(11,17,29,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:"Oswald",sans-serif;font-weight:700;font-size:24px;letter-spacing:.08em}
+.brand small{display:block;font-weight:500;font-size:10px;letter-spacing:.38em;color:var(--accent);margin-top:2px}
+.links{display:flex;gap:30px;font-family:"Oswald",sans-serif;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.links a:hover{color:var(--text)}
+nav .btn{padding:11px 18px;font-size:13px}
+@media(max-width:900px){.links{display:none}}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;min-height:calc(100vh - 72px);border-top:0;padding:0}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:80px 56px 80px max(24px,calc((100vw - 1180px)/2 + 24px))}
+.hero h1{font-size:clamp(72px,10.5vw,150px);letter-spacing:.01em;margin:22px 0 10px}
+.hero .tag{font-size:clamp(30px,3.4vw,44px);color:var(--accent);margin-bottom:28px}
+.hero p{color:var(--muted);font-size:19px;max-width:520px;margin-bottom:38px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-photo{position:relative;overflow:hidden;background:#1a2233}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:contrast(1.04)}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(11,17,29,0) 28%),linear-gradient(0deg,rgba(11,17,29,.55),rgba(11,17,29,0) 35%)}
+.hero-photo .cap{position:absolute;left:32px;bottom:28px;z-index:1;font-family:"Oswald",sans-serif;font-size:12px;letter-spacing:.32em;color:var(--muted);text-transform:uppercase}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-photo{order:-1;height:62vh}
+  .hero-photo::after{background:linear-gradient(0deg,var(--bg) 0%,rgba(11,17,29,0) 45%)}
+  .hero-copy{padding:10px 24px 80px}
+}
+
+/* EPISODES */
+.ep-list{margin-top:56px;border-top:1px solid var(--line)}
+.ep{display:grid;grid-template-columns:90px 1fr 200px 120px;align-items:center;gap:24px;padding:30px 0;border-bottom:1px solid var(--line);transition:.2s}
+.ep:hover{background:rgba(238,230,211,.03)}
+.ep .n{font-family:"Oswald",sans-serif;font-size:44px;font-weight:500;color:rgba(238,230,211,.28)}
+.ep h3{font-size:clamp(22px,2.4vw,30px);margin-bottom:6px}
+.ep p{color:var(--muted);font-size:15px;max-width:560px}
+.ep .g{font-family:"Oswald",sans-serif;font-size:14px;letter-spacing:.2em;text-transform:uppercase}
+.ep .w{justify-self:end;display:flex;align-items:center;gap:12px;font-family:"Oswald",sans-serif;font-size:13px;letter-spacing:.2em;color:var(--muted)}
+.ep .play{width:44px;height:44px;border:1px solid var(--text);display:grid;place-items:center;font-size:13px;color:var(--text)}
+.ep:hover .play{background:var(--text);color:var(--bg)}
+@media(max-width:800px){
+  .ep{grid-template-columns:56px 1fr;gap:6px 16px}
+  .ep .n{font-size:30px;grid-row:span 3;align-self:start}
+  .ep .g,.ep .w{grid-column:2;justify-self:start}
+}
+
+/* STATEMENT */
+.statement{background:var(--bg2);text-align:center;padding:130px 0}
+.statement blockquote{font-size:clamp(34px,4.6vw,60px);line-height:1.15;max-width:960px;margin:0 auto}
+.statement cite{display:block;margin-top:26px;font-style:normal}
+
+/* TOPICS */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--line)}
+.col{padding:38px 32px 10px 0}
+.col+.col{padding-left:32px;border-left:1px solid var(--line)}
+.col .num{font-family:"Oswald",sans-serif;color:var(--accent);font-size:14px;letter-spacing:.3em}
+.col h3{font-size:28px;margin:14px 0 14px}
+.col p{color:var(--muted);font-size:16px}
+.topics{margin-top:56px;font-family:"Oswald",sans-serif;font-size:15px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);line-height:2.2}
+.topics b{color:var(--text);font-weight:500}
+@media(max-width:800px){.cols{grid-template-columns:1fr}.col,.col+.col{padding:30px 0;border-left:0;border-bottom:1px solid var(--line)}}
+
+/* JOURNEY */
+.journey-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.journey p{color:var(--muted);margin-bottom:18px;max-width:600px}
+.journey figure{border:1px solid var(--line);padding:30px;background:var(--bg2)}
+.journey figcaption{margin-top:14px;font-size:22px;text-align:center}
+@media(max-width:860px){.journey-grid{grid-template-columns:1fr}}
+
+/* ASSESSMENT */
+.assess-box{display:grid;grid-template-columns:1.2fr .8fr;border:1px solid var(--line);margin-top:10px}
+.assess-copy{padding:60px}
+.assess-copy p{color:var(--muted);margin-bottom:18px;max-width:560px}
+.stats{display:grid;grid-template-rows:repeat(3,1fr);border-left:1px solid var(--line)}
+.stat{display:flex;align-items:baseline;gap:18px;padding:34px 40px;border-bottom:1px solid var(--line)}
+.stat:last-child{border-bottom:0}
+.stat b{font-family:"Oswald",sans-serif;font-weight:600;font-size:64px;line-height:1}
+.stat span{font-family:"Oswald",sans-serif;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.domains{margin:26px 0 34px;font-family:"Oswald",sans-serif;font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--text)}
+.small{font-size:13px;color:var(--muted);margin-top:16px}
+@media(max-width:860px){.assess-box{grid-template-columns:1fr}.assess-copy{padding:36px 26px}.stats{border-left:0;border-top:1px solid var(--line)}.stat{padding:24px 26px}}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+.about-photo{position:sticky;top:110px}
+.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.about-photo .cap{margin-top:14px;font-family:"Oswald",sans-serif;font-size:12px;letter-spacing:.32em;color:var(--muted);text-transform:uppercase}
+.about h3{font-size:clamp(28px,3vw,40px);line-height:1.1;margin:4px 0 30px}
+.about h3 .serif{color:var(--accent)}
+.about p{color:var(--muted);margin-bottom:20px}
+.about p em{color:var(--text)}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px}.about-photo{position:static}}
+
+/* CLOSE + FOOTER */
+.close{text-align:center;padding:140px 0}
+.close blockquote{font-size:clamp(30px,4vw,52px);line-height:1.2;max-width:900px;margin:0 auto 44px}
+footer{border-top:1px solid var(--line);padding:46px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .f-links{display:flex;gap:26px;flex-wrap:wrap;font-family:"Oswald",sans-serif;letter-spacing:.18em;text-transform:uppercase;font-size:13px}
+footer .f-links a:hover{color:var(--text)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">BILLY METZ<small>THE BILLY METZ SHOW</small></a>
+    <div class="links">
+      <a href="#episodes">Episodes</a><a href="#topics">Topics</a><a href="#journey">The Journey</a><a href="#assessment">Assessment</a><a href="#about">About</a>
+    </div>
+    <a class="btn ghost" href="https://www.youtube.com/@BillyMetz12" target="_blank" rel="noopener">▶ Watch</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-copy">
+    <div class="kicker">The Billy Metz Show</div>
+    <h1>Billy<br>Metz</h1>
+    <div class="tag serif">Living With Dignity</div>
+    <p>Successful men on how they see success, and redefining what it means to be worthy.</p>
+    <div class="ctas">
+      <a class="btn solid" href="#episodes">▶&nbsp; Watch the Episodes</a>
+      <a class="btn ghost" href="#assessment">Take the Assessment</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="images/preview-thinking-dark.jpg" alt="Billy Metz">
+    <div class="cap">Faith · Identity · Dignity</div>
+  </div>
+</header>
+
+<section id="episodes">
+  <div class="wrap">
+    <div class="kicker">The Podcast</div>
+    <h2>The Episodes</h2>
+    <p class="lead">We sit down with successful men to learn how they view success, and to understand and redefine what worthiness really is. No performance, no hype: honest talk about identity, worth, shame, brotherhood, and the life underneath the life.</p>
+    <div class="ep-list">
+      <a class="ep" href="https://www.youtube.com/@BillyMetz12/search?query=Brett%20Fleming" target="_blank" rel="noopener">
+        <div class="n">05</div>
+        <div><h3>Redefining Success</h3><p>Brett Fleming, Partner &amp; VP at 4610, on ambition, faith in Jesus, and building a life that's whole, not just successful.</p></div>
+        <div class="g">Brett Fleming</div>
+        <div class="w">37 MIN <span class="play">▶</span></div>
+      </a>
+      <a class="ep" href="https://www.youtube.com/@BillyMetz12/search?query=Keegan%20Martin" target="_blank" rel="noopener">
+        <div class="n">04</div>
+        <div><h3>You Are Enough</h3><p>Keegan Martin, former real estate broker turned outreach director, on worth, identity, and what God says about you.</p></div>
+        <div class="g">Keegan Martin</div>
+        <div class="w">26 MIN <span class="play">▶</span></div>
+      </a>
+      <a class="ep" href="https://www.youtube.com/@BillyMetz12/search?query=Ford%20Buckner" target="_blank" rel="noopener">
+        <div class="n">03</div>
+        <div><h3>Finding Your Worth</h3><p>Ford Buckner on identity, success, and where worth really comes from.</p></div>
+        <div class="g">Ford Buckner</div>
+        <div class="w">35 MIN <span class="play">▶</span></div>
+      </a>
+      <a class="ep" href="https://www.youtube.com/@BillyMetz12/search?query=James%20Collins" target="_blank" rel="noopener">
+        <div class="n">02</div>
+        <div><h3>Sweet Surrender</h3><p>James Collins on letting go of control, and the freedom on the other side of surrender.</p></div>
+        <div class="g">James Collins</div>
+        <div class="w">34 MIN <span class="play">▶</span></div>
+      </a>
+      <a class="ep" href="https://www.youtube.com/@BillyMetz12/search?query=Mark%20Lichty" target="_blank" rel="noopener">
+        <div class="n">01</div>
+        <div><h3>What Are You Pouring Your Life Into?</h3><p>Mark Lichty on where a man pours his time, energy and heart, and what's really worth it.</p></div>
+        <div class="g">Mark Lichty</div>
+        <div class="w">33 MIN <span class="play">▶</span></div>
+      </a>
+    </div>
+    <div style="margin-top:44px"><a class="btn ghost" href="https://www.youtube.com/@BillyMetz12" target="_blank" rel="noopener">Go to the Channel →</a></div>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="wrap">
+    <blockquote class="serif">“Dignity isn't a slogan. It's how a man lives when nobody's watching.”</blockquote>
+    <cite class="kicker">The Billy Metz Show</cite>
+  </div>
+</section>
+
+<section id="topics">
+  <div class="wrap">
+    <div class="kicker">On the Show</div>
+    <h2>What We Talk About</h2>
+    <p class="lead">The conversations go where real life goes: the heavy stuff, and the stuff that makes men laugh around a table.</p>
+    <div class="cols">
+      <div class="col"><div class="num">01</div><h3>Being Enough</h3><p>The deal closed, the title came, the house got bigger. So why does it still feel like it's not enough? We talk about the gap between achievement and worth.</p></div>
+      <div class="col"><div class="num">02</div><h3>What Keeps Us Away</h3><p>Shame, fear, pride, numbness. The emotions men carry quietly, and how they keep us at arm's length from God and from the people we love.</p></div>
+      <div class="col"><div class="num">03</div><h3>Deeply Beloved</h3><p>How each guest came to know he is God's: loved before he performed anything, fully known, and called by name.</p></div>
+    </div>
+    <div class="topics"><b>Identity</b> / Performance vs. worth / <b>Shame &amp; pride</b> / Fatherhood / <b>Brotherhood</b> / Prayer / <b>Purpose</b> / Cuban cigars / <b>War movies</b></div>
+  </div>
+</section>
+
+<section class="journey" id="journey">
+  <div class="wrap journey-grid">
+    <div>
+      <div class="kicker">The Journey</div>
+      <h2>Conversion isn't up and to the right</h2>
+      <p>Most of us expect faith to look like a growth chart: one moment, then a straight line up. It rarely works that way. Conversion happens in stages, across different seasons of life. It moves forward, sideways, back, and forward again.</p>
+      <p>Read the book of Acts. Saul is stopped on the road to Damascus (Acts 9). An Ethiopian official is reading Isaiah in his chariot (Acts 8). Cornelius, a Roman officer, is already praying when Peter arrives (Acts 10). Lydia is listening by a river (Acts 16). Different men and women, different moments, different paths.</p>
+      <p style="color:var(--text)">A winding road is still a road home. Wherever you are on it, you're not behind.</p>
+    </div>
+    <figure>
+      <svg role="img" aria-label="Diagram: a dashed straight line rising up and to the right labeled what we expect, above a winding path of arrows moving mostly sideways and looping back, labeled what it really looks like" viewBox="0 0 400 280" style="width: 100%; height: auto">
+<defs>
+<marker id="ah" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7FB2D9"></path></marker>
+<marker id="ahc" viewBox="0 0 10 10" refX="6" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8A97B4"></path></marker>
+</defs>
+<text x="20" y="24" fill="#B9C3D8" font-family="Oswald, sans-serif" font-size="13" letter-spacing="1.5">WHAT WE EXPECT</text>
+<path d="M24 118 L360 36" fill="none" stroke="#8A97B4" stroke-width="2.5" stroke-dasharray="7 7" marker-end="url(#ahc)"></path>
+<line x1="20" y1="146" x2="380" y2="146" stroke="#26324a" stroke-width="1"></line>
+<text x="20" y="176" fill="#EEE6D3" font-family="Oswald, sans-serif" font-size="13" letter-spacing="1.5">WHAT IT REALLY LOOKS LIKE</text>
+<circle cx="26" cy="226" r="6" fill="#EEE6D3"></circle>
+<path d="M34 226 C 60 210, 85 210, 104 220" fill="none" stroke="#7FB2D9" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ah)"></path>
+<path d="M120 226 C 150 250, 120 262, 100 250" fill="none" stroke="#7FB2D9" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ah)"></path>
+<path d="M112 258 C 150 270, 175 230, 200 236" fill="none" stroke="#7FB2D9" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ah)"></path>
+<path d="M216 240 C 240 256, 262 224, 246 212" fill="none" stroke="#7FB2D9" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ah)"></path>
+<path d="M254 206 C 280 196, 300 232, 324 222" fill="none" stroke="#7FB2D9" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ah)"></path>
+<path d="M336 216 C 350 210, 362 206, 372 204" fill="none" stroke="#7FB2D9" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ah)"></path>
+</svg>
+      <figcaption class="serif">Forward, sideways, back, and forward again.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="assessment">
+  <div class="wrap">
+    <div class="kicker">Free · Living in Dignity</div>
+    <h2>Where are you rooted?</h2>
+    <div class="assess-box">
+      <div class="assess-copy">
+        <p>A free, honest look at the life underneath the life. Answer 48 questions, get your score by email and on your dashboard, and see clearly where dignity is holding, and where it's slipping.</p>
+        <p>Your score isn't a measure of how holy or how good you are. It's a snapshot of where you are today, and where you might want to go.</p>
+        <div class="domains">Identity · Faith · Emotions · Relationships · Work · Wholeness</div>
+        <a class="btn solid" href="https://assess.billymetzshow.com" target="_blank" rel="noopener">Take the Assessment →</a>
+        <div class="small">assess.billymetzshow.com · Access code shared on the show</div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>48</b><span>Questions</span></div>
+        <div class="stat"><b>6</b><span>Domains</span></div>
+        <div class="stat"><b>0</b><span>Cost</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo">
+      <img src="images/preview-smiling-dark.jpg" alt="Billy Metz">
+      <div class="cap">Billy Metz · Host</div>
+    </div>
+    <div>
+      <div class="kicker">Your Host</div>
+      <h2>Meet Billy</h2>
+      <h3>Broken boy. <span class="serif">Mended man.</span> Follower of Jesus.</h3>
+      <p>Billy did the thing you're told will finally make you somebody. He became very successful: top of his field, money handled, the results to prove it. From the outside, it looked like he'd arrived.</p>
+      <p>Then he found out what success can actually give you: financial stability. And nothing else. It couldn't hand him worth. It couldn't tell him who he was. It couldn't make him loved. He had been chasing in achievement what was never for sale and never for earning, because it had already been given.</p>
+      <p>That's sonship. At Jesus' baptism, before a single miracle, before the crowds, before the cross, the Father's voice broke open the sky: <em>“This is my beloved Son, in whom I am well pleased.”</em> Beloved first. Works second. Billy lives from that same word spoken over him: he is a deeply beloved son of the Most High God.</p>
+      <p>The Bible calls it adoption: <em>“you have received the Spirit of adoption as sons, by whom we cry, ‘Abba! Father!’”</em> (Romans 8:15). <em>“See what kind of love the Father has given to us, that we should be called children of God; and so we are”</em> (1 John 3:1). His worth was settled by sonship before his success ever showed up. Success could only ever add money, never identity.</p>
+      <p>That's why Billy hosts The Billy Metz Show: Living With Dignity. Not to perform, and not to prove. From sonship, he sits down with successful men to learn how they view success, and to understand and redefine what worthiness is.</p>
+    </div>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <blockquote class="serif">“Success gave me stability. Sonship gave me a name. I am a deeply beloved son of the Most High God.”</blockquote>
+    <a class="btn solid" href="https://www.youtube.com/@BillyMetz12" target="_blank" rel="noopener">▶&nbsp; Watch the Show</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">BILLY METZ<small>LIVING WITH DIGNITY</small></div>
+    <div class="f-links"><a href="#episodes">Episodes</a><a href="#topics">Topics</a><a href="#assessment">Assessment</a><a href="#about">About</a><a href="https://www.youtube.com/@BillyMetz12" target="_blank" rel="noopener">YouTube</a></div>
+    <div>© 2026 Billy Metz · The Billy Metz Show</div>
+  </div>
+</footer>
+</body>
+</html>
