@@ -64,6 +64,31 @@ nav .wrap{display:flex;justify-content:space-between;align-items:center;height:7
 .answer b{color:var(--clay);font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.08em;margin-right:8px}
 @media(max-width:860px){.problem .intro,.probs{grid-template-columns:1fr;gap:18px}}
 #path{background:var(--card);border-block:1px solid var(--line)}
+
+.year{background:var(--oat)}
+.mv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.m{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--clay);border-radius:2px;padding:30px 28px}
+.m .tag{font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--clay)}
+.m h3{font-size:30px;margin:10px 0 6px}
+.m .lvl{font-weight:700;font-size:14px;color:var(--navy);margin-bottom:16px}
+.m ol{list-style:none;border-top:1px solid var(--line)}
+.m li{padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--soft);display:grid;grid-template-columns:84px 1fr;gap:8px}
+.m li b{color:var(--ink);font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+.rtw{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.r{background:var(--navy);color:#fff;padding:28px;border-radius:2px}
+.r h4{font-family:"Oswald",sans-serif;text-transform:uppercase;font-size:22px;letter-spacing:.03em;color:var(--peach);margin-bottom:8px}
+.r p{color:#C3CCDD;font-size:15px}
+.measure{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:var(--card)}
+.ms{padding:24px 26px;border-right:1px solid var(--line)}
+.ms:last-child{border-right:0}
+.ms b{display:block;font-family:"Oswald",sans-serif;font-size:40px;line-height:1;color:var(--clay)}
+.ms span{font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.leave{margin-top:40px;display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
+.leave h3{font-size:34px}
+.leave ul{list-style:none}
+.leave li{padding:12px 0;border-bottom:1px solid var(--line);color:var(--soft)}
+.leave li b{color:var(--ink)}
+@media(max-width:900px){.mv,.rtw,.measure,.leave{grid-template-columns:1fr}.ms{border-right:0;border-bottom:1px solid var(--line)}}
 .head{max-width:720px;margin-bottom:46px}
 .head h2{font-size:clamp(38px,5vw,60px);margin:10px 0 14px}
 .head p{color:var(--soft)}
@@ -129,7 +154,7 @@ footer .fl{display:flex;gap:22px;flex-wrap:wrap}
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#top">Living With Dignity<small>Discipleship for Men</small></a>
-  <div class="links"><a href="#problem">The Problem</a><a href="#path">How It Works</a><a href="#programs">Programs</a><a href="#believe">What We Believe</a><a href="#founder">Our Story</a></div>
+  <div class="links"><a href="#problem">The Problem</a><a href="#path">How It Works</a><a href="#year">The Year</a><a href="#programs">Programs</a><a href="#believe">What We Believe</a><a href="#founder">Our Story</a></div>
   <a class="btn primary" href="#involved">Get Involved</a>
 </div></nav>
 
@@ -173,9 +198,52 @@ footer .fl{display:flex;gap:22px;flex-wrap:wrap}
     <div class="head"><div class="eyebrow">How It Works</div><h2>A clear path, walked together.</h2><p>No man grows alone. Every step happens in brotherhood, anchored in Scripture.</p></div>
     <div class="path">
       <div class="step"><div class="n">1</div><h3>Assess</h3><p>Take the free Living in Dignity assessment and see where you're rooted, and where you're struggling.</p></div>
-      <div class="step"><div class="n">2</div><h3>Gather</h3><p>Join a small cohort of men who are honest about what success hasn't fixed.</p></div>
-      <div class="step"><div class="n">3</div><h3>Grow</h3><p>Walk through Scripture together: sonship, identity, emotions, relationships and work.</p></div>
+      <div class="step"><div class="n">2</div><h3>Gather</h3><p>Join a cohort and a triad: three men who check in weekly. “Fine” is a banned answer.</p></div>
+      <div class="step"><div class="n">3</div><h3>Train</h3><p>Twelve months, six domains: the Word, emotion training and one practice every week. Retake at month 6 and month 12.</p></div>
       <div class="step"><div class="n">4</div><h3>Go</h3><p>Lead your own group and disciple the next man. Brotherhood that multiplies.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="year" id="year">
+  <div class="wrap">
+    <div class="head"><div class="eyebrow">The Dignity Year</div><h2>Twelve months. Six domains. One thread.</h2><p>A year of formation for the man whose worth has been riding on his performance. Each domain gets two months: the first for conviction, the truth heard and believed; the second for practice, the truth lived until it shows.</p></div>
+    <div class="mv">
+      <div class="m"><div class="tag">Movement I · Months 1–4</div><h3>The Name You Were Given</h3><div class="lvl">Emotion training, Level 1: Name It</div><ol>
+        <li><b>Month 1</b>Identity &amp; Worth: Beloved before achievement</li>
+        <li><b>Month 2</b>Identity &amp; Worth: Settling it where work can't touch it</li>
+        <li><b>Month 3</b>Surrender &amp; Trust: Loosening the grip</li>
+        <li><b>Month 4</b>Surrender &amp; Trust: Waiting without quitting</li></ol></div>
+      <div class="m"><div class="tag">Movement II · Months 5–8</div><h3>The Inner Life &amp; the Scoreboard</h3><div class="lvl">Emotion training, Level 2: Read It &amp; Pause</div><ol>
+        <li><b>Month 5</b>Emotional Honesty: Naming what's actually happening</li>
+        <li><b>Month 6</b>Emotional Honesty: The buried stuff</li>
+        <li><b>Month 7</b>Work &amp; Ambition: Work as worship, held loosely</li>
+        <li><b>Month 8</b>Work &amp; Ambition: Rewriting the scoreboard</li></ol></div>
+      <div class="m"><div class="tag">Movement III · Months 9–12</div><h3>The Life That Flows From It</h3><div class="lvl">Emotion training, Level 3: Dial It &amp; Lead With It</div><ol>
+        <li><b>Month 9</b>Presence &amp; Family: Being where your feet are</li>
+        <li><b>Month 10</b>Presence &amp; Family: The friction at home</li>
+        <li><b>Month 11</b>Cultural Resistance: Standing against the current</li>
+        <li><b>Month 12</b>Cultural Resistance: Sent with a rule of life</li></ol></div>
+    </div>
+    <div class="rtw">
+      <div class="r"><h4>Read It</h4><p>Twelve chapters of <i>Living With Dignity</i>, one per month. Each names the lie that month is built to break.</p></div>
+      <div class="r"><h4>Train It</h4><p>A 90-minute working session opens each month. The weeks between carry the Word, an emotion drill and a practice lived out with two other men.</p></div>
+      <div class="r"><h4>Work It</h4><p>For men in sales, <i>Dignity in Sales</i> runs as a parallel work track: the same dignity, in the language of quota and pipeline.</p></div>
+    </div>
+    <div class="measure">
+      <div class="ms"><b>Week 0</b><span>Entry assessment</span></div>
+      <div class="ms"><b>Week 24</b><span>Mid-year retake</span></div>
+      <div class="ms"><b>Week 48</b><span>Final retake</span></div>
+    </div>
+    <div class="leave">
+      <h3>What a man leaves with</h3>
+      <ul>
+        <li><b>A name he did not earn:</b> worth settled in sonship, off the scoreboard for good.</li>
+        <li><b>Two scores and a story:</b> his Week 0 and Week 48 results, and the distance between them.</li>
+        <li><b>A trained emotional life:</b> he can name an emotion, read it, pause, and lead with it.</li>
+        <li><b>A rule of life:</b> a one-page plan in his own words: his practices, his triad, his guardrails.</li>
+        <li><b>Brothers:</b> an alumni triad that keeps meeting monthly. Nobody grows alone.</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -184,8 +252,8 @@ footer .fl{display:flex;gap:22px;flex-wrap:wrap}
   <div class="wrap">
     <div class="head"><div class="eyebrow" style="color:var(--peach)">Programs</div><h2>Where men find their footing.</h2><p>Simple, consistent ways to grow, whether you're just curious or ready to lead.</p></div>
     <div class="progs">
-      <div class="prog"><div class="tag">Small Groups</div><h3>Dignity Cohorts</h3><p>An 8-week small group for men, built around sonship, identity and the life underneath the life. Meets weekly, in person or online.</p><a href="#involved">Join the next cohort</a></div>
-      <div class="prog"><div class="tag">Free Tool</div><h3>The Assessment</h3><p>48 questions across six areas of life: identity, faith, emotions, relationships, work and wholeness. A snapshot, not a grade.</p><a href="https://assess.billymetzshow.com" target="_blank" rel="noopener">Take the assessment</a></div>
+      <div class="prog"><div class="tag">12-Month Cohort</div><h3>The Dignity Year</h3><p>48 weeks of formation in triads: a monthly 90-minute working session, weekly Scripture, emotion training and practice, measured at the start, middle and end.</p><a href="#year">See the year</a></div>
+      <div class="prog"><div class="tag">Free Tool</div><h3>The Assessment</h3><p>48 questions across six domains: identity &amp; worth, surrender &amp; trust, emotional honesty, work &amp; ambition, presence &amp; family, and cultural resistance. A snapshot, not a grade.</p><a href="https://assess.billymetzshow.com" target="_blank" rel="noopener">Take the assessment</a></div>
       <div class="prog"><div class="tag">Media</div><h3>The Billy Metz Show</h3><p>Honest conversations with successful men about success, worth and faith. The front door for men who aren't ready for a group yet.</p><a href="https://billymetzshow.com" target="_blank" rel="noopener">Watch the show</a></div>
     </div>
   </div>
@@ -225,7 +293,7 @@ footer .fl{display:flex;gap:22px;flex-wrap:wrap}
   <div class="wrap">
     <div class="head"><div class="eyebrow">Get Involved</div><h2>There's a place for you here.</h2></div>
     <div class="grid">
-      <div class="card c1"><div class="eyebrow" style="color:var(--wood)">For Men</div><h3>Join a Cohort</h3><p>Eight weeks with a small group of men who want more than success. Next cohort forming soon.</p><a class="btn" href="mailto:hello@livingwithdignity.org">Get on the list</a></div>
+      <div class="card c1"><div class="eyebrow" style="color:var(--wood)">For Men</div><h3>Join a Cohort</h3><p>Twelve months with a triad of brothers and a cohort of men who want more than success. Next cohort forming soon.</p><a class="btn" href="mailto:hello@livingwithdignity.org">Get on the list</a></div>
       <div class="card c2"><div class="eyebrow" style="color:var(--peach)">For Churches</div><h3>Partner With Us</h3><p>Bring Dignity Cohorts and the assessment to your men's ministry. We'll help you launch and lead.</p><a class="btn" href="mailto:hello@livingwithdignity.org">Start a conversation</a></div>
       <div class="card c3"><div class="eyebrow">For Supporters</div><h3>Give</h3><p>Your gift helps us reach, gather and disciple more men, and keep the assessment free.</p><a class="btn navy" href="#">Give today</a><div class="note">Online giving opens once 501(c)(3) status is approved.</div></div>
     </div>
