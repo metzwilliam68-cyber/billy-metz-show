@@ -49,6 +49,21 @@ nav .wrap{display:flex;justify-content:space-between;align-items:center;height:7
 .mission blockquote{font-family:"Oswald",sans-serif;font-weight:600;text-transform:uppercase;font-size:clamp(28px,3.8vw,46px);line-height:1.25;max-width:940px;margin:18px auto 0}
 .mission blockquote span{color:var(--clay)}
 
+
+.problem .intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:46px}
+.problem h2{font-size:clamp(40px,5.4vw,68px);margin-top:10px}
+.problem .intro p{color:var(--soft);font-size:18px}
+.problem .intro p b{color:var(--ink)}
+.probs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.prob{background:var(--navy);color:#fff;padding:40px 36px;border-radius:2px;border-top:5px solid var(--clay)}
+.prob .tag{font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--peach)}
+.prob h3{font-size:clamp(30px,3.2vw,42px);margin:12px 0 14px}
+.prob p{color:#C3CCDD;font-size:16px}
+.prob blockquote{margin-top:20px;padding-left:16px;border-left:3px solid var(--clay);color:#fff;font-weight:600;font-style:italic}
+.answer{margin-top:30px;background:var(--card);border:1px solid var(--line);padding:26px 32px;border-radius:2px;font-size:18px}
+.answer b{color:var(--clay);font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.08em;margin-right:8px}
+@media(max-width:860px){.problem .intro,.probs{grid-template-columns:1fr;gap:18px}}
+#path{background:var(--card);border-block:1px solid var(--line)}
 .head{max-width:720px;margin-bottom:46px}
 .head h2{font-size:clamp(38px,5vw,60px);margin:10px 0 14px}
 .head p{color:var(--soft)}
@@ -114,7 +129,7 @@ footer .fl{display:flex;gap:22px;flex-wrap:wrap}
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#top">Living With Dignity<small>Discipleship for Men</small></a>
-  <div class="links"><a href="#path">How It Works</a><a href="#programs">Programs</a><a href="#believe">What We Believe</a><a href="#founder">Our Story</a></div>
+  <div class="links"><a href="#problem">The Problem</a><a href="#path">How It Works</a><a href="#programs">Programs</a><a href="#believe">What We Believe</a><a href="#founder">Our Story</a></div>
   <a class="btn primary" href="#involved">Get Involved</a>
 </div></nav>
 
@@ -137,6 +152,20 @@ footer .fl{display:flex;gap:22px;flex-wrap:wrap}
   <div class="wrap">
     <div class="eyebrow">Our Mission</div>
     <blockquote>To help men know they are <span>worthy of God's love in Christ Jesus</span>, and to disciple them to live, lead, and work from that identity, not for it.</blockquote>
+  </div>
+</section>
+
+<section class="problem" id="problem">
+  <div class="wrap">
+    <div class="intro">
+      <div><div class="eyebrow">The Problem</div><h2>Men are drowning quietly.</h2></div>
+      <p>For years, leading men's Bible studies, I've seen the same thing again and again: <b>successful men who are struggling, with nowhere to name it and no way to measure it.</b></p>
+    </div>
+    <div class="probs">
+      <div class="prob"><div class="tag">Problem 01</div><h3>A discipleship gap</h3><p>Most men aren't being discipled. There's no place to feel what they need to feel, talk honestly about what's really going on, and grow closer to Jesus together. Sunday isn't enough, and most men never get past small talk.</p></div>
+      <div class="prob"><div class="tag">Problem 02</div><h3>No measuring stick</h3><p>There's no assessment, no metric to help a man see what's going on inside. We measure revenue, reps and results, but not the soul.</p><blockquote>When a man says, “I'm struggling here. I'm drowning here,” what is that? What's really there?</blockquote></div>
+    </div>
+    <div class="answer"><b>Our answer:</b>Honest discipleship in brotherhood, and a measuring stick that shows each man where he is today and where he needs to go.</div>
   </div>
 </section>
 
