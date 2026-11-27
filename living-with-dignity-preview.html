@@ -75,6 +75,19 @@ nav .wrap{display:flex;justify-content:space-between;align-items:center;height:7
 .sig{font-family:"Fraunces",serif;font-weight:600;font-size:21px}
 @media(max-width:860px){.story .wrap{grid-template-columns:1fr}}
 
+
+.assess .box{background:var(--navy);color:#fff;border-radius:20px;padding:56px;display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:center}
+.assess .eyebrow{color:var(--peach)}
+.assess h2{font-size:clamp(36px,4.6vw,54px);margin:10px 0 16px}
+.assess p{color:#C9D3E4;margin-bottom:14px}
+.assess .btn{background:var(--clay);color:#fff;font-size:17px;padding:17px 28px}
+.assess .btn:hover{background:#fff;color:var(--ink)}
+.code{display:inline-flex;align-items:center;gap:10px;margin-left:14px;color:#C9D3E4;font-size:15px}
+.code b{font-family:"Fraunces",serif;font-size:22px;color:#fff;background:rgba(255,255,255,.1);border:1px dashed rgba(255,255,255,.4);padding:4px 14px;border-radius:8px;letter-spacing:.08em}
+.facts{display:grid;gap:12px}
+.fact{background:rgba(255,255,255,.07);border-radius:14px;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;color:#C9D3E4;font-weight:600}
+.fact b{font-family:"Fraunces",serif;font-size:32px;color:#fff;line-height:1}
+@media(max-width:860px){.assess .box{grid-template-columns:1fr;padding:34px 24px}.code{margin:14px 0 0}}
 .join{padding-top:0}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .card{border-radius:18px;padding:40px 36px;display:flex;flex-direction:column}
@@ -96,7 +109,7 @@ footer .fl a:hover{color:#fff}
 <body>
 <nav><div class="wrap">
   <a class="logo" href="#top"><img src="images/lwd-icon.png" alt="">Living With Dignity</a>
-  <div class="links"><a href="#problem">Why</a><a href="#year">The Year</a><a href="#story">Our Story</a></div>
+  <div class="links"><a href="#problem">Why</a><a href="#year">The Year</a><a href="#assessment">Assessment</a><a href="#story">Our Story</a></div>
   <a class="btn primary" href="#join">Get Involved</a>
 </div></nav>
 
@@ -142,7 +155,30 @@ footer .fl a:hover{color:#fff}
   </div>
 </section>
 
-<section class="story" id="story">
+<section class="assess" id="assessment">
+  <div class="wrap">
+    <div class="box">
+      <div>
+        <div class="eyebrow">Free · The Living in Dignity Assessment</div>
+        <h2>Where are you, really?</h2>
+        <p>48 honest questions across the six domains. You'll get your score by email and on your own dashboard, so you can see where dignity is holding and where it's slipping.</p>
+        <p>It's not a grade on how holy or how good you are. It's a snapshot of where you are today, and where you might want to go.</p>
+        <div style="margin-top:22px;display:flex;align-items:center;flex-wrap:wrap">
+          <a class="btn" href="https://assess.billymetzshow.com" target="_blank" rel="noopener">Take the Assessment →</a>
+          <span class="code">Access code <b>LID10</b></span>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact"><span>Questions</span><b>48</b></div>
+        <div class="fact"><span>Domains</span><b>6</b></div>
+        <div class="fact"><span>Minutes</span><b>~10</b></div>
+        <div class="fact"><span>Cost</span><b>Free</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="story" style="padding-top:0">
   <div class="wrap">
     <div class="story-photo"><img src="images/cut-smiling.png" alt="Billy Metz"></div>
     <div>
