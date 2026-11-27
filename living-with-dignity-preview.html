@@ -4,170 +4,111 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Living With Dignity | Discipleship &amp; Teaching for Men (Preview)</title>
+<title>Living With Dignity | Discipleship &amp; Teaching for Men</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--oat:#F3F1EC;--card:#FFFFFF;--ink:#0F1726;--navy:#13213D;--soft:#5A6478;--clay:#4B9CD3;--peach:#8CC4EA;--line:#DDE3EC;--wood:#0E1A30}
+:root{--oat:#F2ECE1;--card:#FBF8F3;--ink:#1D2433;--navy:#1C2B4A;--soft:#5F6678;--clay:#B5653F;--peach:#F3C9A6;--line:#E2D9C9;--wood:#3A2A1E}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:"Inter",system-ui,sans-serif;background:var(--oat);color:var(--ink);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:"Oswald","Arial Narrow",Impact,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.005em;line-height:1}
-.eyebrow{font-weight:800;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--clay)}
-.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:16px 26px;border-radius:2px;text-transform:uppercase;letter-spacing:.1em;font-size:14px;transition:.18s}
-.btn.primary{background:var(--clay);color:var(--wood)}.btn.primary:hover{background:#fff;color:var(--wood)}
-.btn.navy{background:var(--navy);color:#fff}.btn.navy:hover{background:var(--clay)}
-.btn.out{border:2px solid currentColor}
-section{padding:100px 0}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:800;letter-spacing:-.02em;line-height:1.05}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:15px 24px;border-radius:10px;transition:.18s}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.primary:hover{background:var(--clay)}
+.btn.out{border:2px solid var(--navy);color:var(--navy)}
+.btn.out:hover{background:var(--navy);color:#fff}
+section{padding:96px 0}
+.head{max-width:700px;margin-bottom:42px}
+.head h2{font-size:clamp(36px,4.8vw,56px);margin:10px 0 14px}
+.head p{color:var(--soft)}
 
 nav{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
 nav .wrap{display:flex;justify-content:space-between;align-items:center;height:74px}
-.logo{font-family:"Oswald",sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;letter-spacing:.03em;line-height:1}
-.logo{display:flex;align-items:center;gap:12px;white-space:nowrap}.logo small{display:block;font-family:"Inter";font-weight:600;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);margin-top:4px}
-.links{display:flex;gap:22px;font-weight:600;font-size:14px;color:var(--soft);white-space:nowrap}
+.logo{display:flex;align-items:center;gap:12px;font-family:"Fraunces",serif;font-weight:800;font-size:23px;letter-spacing:-.01em;white-space:nowrap}
+.logo img{height:48px;width:auto}
+.links{display:flex;gap:26px;font-weight:600;font-size:15px;color:var(--soft)}
 .links a:hover{color:var(--ink)}
-@media(max-width:1080px){.links{display:none}}
+@media(max-width:900px){.links{display:none}}
 
-.hero{background:radial-gradient(ellipse at 75% 20%,#26467A 0%,var(--navy) 50%,#070E1C 100%);color:#fff;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 25%,rgba(75,156,211,.30),transparent 32%)}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1fr;align-items:center;min-height:600px}
-.hero-copy{padding:90px 0}
-.hero h1{font-size:clamp(48px,6.4vw,88px);margin:16px 0 22px}
-.hero h1 span{color:var(--peach)}
-.hero h1{max-width:980px}.hero p{font-size:20px;color:#C9D6EA;max-width:560px;margin-bottom:34px}
-.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
-.hero .btn.out{color:#fff}
-.hero-photo{align-self:end}
-.hero-photo img{width:100%;max-height:600px;object-fit:contain;object-position:bottom}
-@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-copy{padding:60px 0 0}.hero-photo img{max-height:380px;margin:0 auto}}
+.hero{padding:80px 0 90px;text-align:center}
+.hero .mark{height:150px;width:auto;margin:0 auto 26px}
+.hero h1{font-size:clamp(44px,6.6vw,84px);max-width:900px;margin:14px auto 20px}
+.hero h1 span{color:var(--clay)}
+.hero p{font-size:20px;color:var(--soft);max-width:640px;margin:0 auto 36px}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 
-.mission{text-align:center;background:var(--card);border-bottom:1px solid var(--line)}
-.mission blockquote{font-family:"Oswald",sans-serif;font-weight:600;text-transform:uppercase;font-size:clamp(28px,3.8vw,46px);line-height:1.25;max-width:940px;margin:18px auto 0}
-.mission blockquote span{color:var(--clay)}
+.mission{background:var(--navy);color:#fff;text-align:center}
+.mission .eyebrow{color:var(--peach)}
+.mission blockquote{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(28px,3.6vw,44px);line-height:1.25;max-width:900px;margin:16px auto 0}
+.mission blockquote span{color:var(--peach)}
 
+.probs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.prob{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 32px}
+.prob h3{font-size:30px;margin:10px 0 10px}
+.prob p{color:var(--soft)}
+.prob blockquote{margin-top:16px;padding-left:14px;border-left:3px solid var(--clay);font-family:"Fraunces",serif;font-weight:600;font-size:19px;color:var(--ink)}
+@media(max-width:800px){.probs{grid-template-columns:1fr}}
 
-.problem .intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:46px}
-.problem h2{font-size:clamp(40px,5.4vw,68px);margin-top:10px}
-.problem .intro p{color:var(--soft);font-size:18px}
-.problem .intro p b{color:var(--ink)}
-.probs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.prob{background:var(--navy);color:#fff;padding:40px 36px;border-radius:2px;border-top:5px solid var(--clay)}
-.prob .tag{font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--peach)}
-.prob h3{font-size:clamp(30px,3.2vw,42px);margin:12px 0 14px}
-.prob p{color:#C3CCDD;font-size:16px}
-.prob blockquote{margin-top:20px;padding-left:16px;border-left:3px solid var(--clay);color:#fff;font-weight:600;font-style:italic}
-.answer{margin-top:30px;background:var(--card);border:1px solid var(--line);padding:26px 32px;border-radius:2px;font-size:18px}
-.answer b{color:var(--clay);font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.08em;margin-right:8px}
-@media(max-width:860px){.problem .intro,.probs{grid-template-columns:1fr;gap:18px}}
-#path{background:var(--card);border-block:1px solid var(--line)}
+.year{background:var(--card);border-block:1px solid var(--line)}
+.mv{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.m{border-top:3px solid var(--clay);padding-top:22px}
+.m .tag{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.m h3{font-size:28px;margin:8px 0 14px}
+.m ul{list-style:none}
+.m li{padding:8px 0;border-bottom:1px solid var(--line);color:var(--soft);font-size:15px}
+.note{margin-top:34px;color:var(--soft);font-size:16px}
+.note b{color:var(--ink)}
+@media(max-width:860px){.mv{grid-template-columns:1fr}}
 
-.year{background:var(--oat)}
-.mv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.m{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--clay);border-radius:2px;padding:30px 28px}
-.m .tag{font-weight:800;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--clay)}
-.m h3{font-size:30px;margin:10px 0 6px}
-.m .lvl{font-weight:700;font-size:14px;color:var(--navy);margin-bottom:16px}
-.m ol{list-style:none;border-top:1px solid var(--line)}
-.m li{padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--soft);display:grid;grid-template-columns:84px 1fr;gap:8px}
-.m li b{color:var(--ink);font-family:"Oswald",sans-serif;text-transform:uppercase;letter-spacing:.04em;font-weight:600}
-.rtw{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
-.r{background:var(--navy);color:#fff;padding:28px;border-radius:2px}
-.r h4{font-family:"Oswald",sans-serif;text-transform:uppercase;font-size:22px;letter-spacing:.03em;color:var(--peach);margin-bottom:8px}
-.r p{color:#C3CCDD;font-size:15px}
-.measure{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:var(--card)}
-.ms{padding:24px 26px;border-right:1px solid var(--line)}
-.ms:last-child{border-right:0}
-.ms b{display:block;font-family:"Oswald",sans-serif;font-size:40px;line-height:1;color:var(--clay)}
-.ms span{font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
-.leave{margin-top:40px;display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
-.leave h3{font-size:34px}
-.leave ul{list-style:none}
-.leave li{padding:12px 0;border-bottom:1px solid var(--line);color:var(--soft)}
-.leave li b{color:var(--ink)}
-@media(max-width:900px){.mv,.rtw,.measure,.leave{grid-template-columns:1fr}.ms{border-right:0;border-bottom:1px solid var(--line)}}
-.head{max-width:720px;margin-bottom:46px}
-.head h2{font-size:clamp(38px,5vw,60px);margin:10px 0 14px}
-.head p{color:var(--soft)}
+.story .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+.story-photo{border-radius:18px;overflow:hidden;background:radial-gradient(ellipse at 60% 25%,#5A4330 0%,var(--wood) 70%);aspect-ratio:4/5;position:relative}
+.story-photo img{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:105%;max-width:none}
+.story h2{font-size:clamp(36px,4.6vw,54px);margin:10px 0 18px}
+.story p{color:var(--soft);margin-bottom:16px}
+.story p em{color:var(--ink)}
+.sig{font-family:"Fraunces",serif;font-weight:600;font-size:21px}
+@media(max-width:860px){.story .wrap{grid-template-columns:1fr}}
 
-.path{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
-.step{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--clay);border-radius:2px;padding:30px 26px;position:relative}
-.step .n{font-family:"Oswald",sans-serif;font-weight:700;font-size:56px;color:var(--clay);line-height:1}
-.step h3{font-size:26px;margin:14px 0 8px}
-.step p{color:var(--soft);font-size:15px}
-.step:not(:last-child)::after{content:"→";position:absolute;right:-16px;top:44px;color:var(--clay);font-weight:700;font-size:20px}
-@media(max-width:900px){.path{grid-template-columns:1fr 1fr}.step::after{display:none}}
-@media(max-width:560px){.path{grid-template-columns:1fr}}
+.join{padding-top:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{border-radius:18px;padding:40px 36px;display:flex;flex-direction:column}
+.card h3{font-size:34px;margin:10px 0 10px}
+.card p{flex:1;margin-bottom:24px}
+.card .btn{align-self:flex-start}
+.c1{background:var(--clay);color:#fff}.c1 .eyebrow{color:#FBE6D8}.c1 p{color:#FBE6D8}.c1 .btn{background:#fff;color:var(--ink)}
+.c2{background:var(--navy);color:#fff}.c2 .eyebrow{color:var(--peach)}.c2 p{color:#C9D3E4}.c2 .btn{background:#fff;color:var(--ink)}
+@media(max-width:800px){.cards{grid-template-columns:1fr}}
 
-.programs{background:var(--navy);color:#fff}
-.programs .head p{color:#C3CCDD}
-.progs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.prog{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-left:5px solid var(--clay);border-radius:2px;padding:32px 28px;display:flex;flex-direction:column}
-.prog .tag{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--peach)}
-.prog h3{font-size:30px;margin:12px 0 10px}
-.prog p{color:#C3CCDD;font-size:16px;flex:1}
-.prog a{margin-top:22px;font-weight:700;color:#fff;border-bottom:2px solid var(--clay);align-self:flex-start;padding-bottom:2px}
-@media(max-width:860px){.progs{grid-template-columns:1fr}}
-
-.beliefs .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px}
-.beliefs h2{font-size:clamp(36px,4.6vw,56px);margin:10px 0 16px}
-.beliefs .intro p{color:var(--soft)}
-.b{padding:22px 0;border-bottom:1px solid var(--line)}
-.b:first-child{border-top:1px solid var(--line)}
-.b h3{font-size:26px;margin-bottom:6px}
-.b p{color:var(--soft);font-size:16px}
-.b small{display:block;margin-top:6px;font-weight:600;color:var(--clay);font-size:14px}
-@media(max-width:860px){.beliefs .wrap{grid-template-columns:1fr;gap:24px}}
-
-.founder{background:var(--card);border-block:1px solid var(--line)}
-.founder .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
-.founder-photo{border-radius:2px;overflow:hidden;background:radial-gradient(ellipse at 60% 25%,#2F5A92 0%,var(--navy) 70%);box-shadow:14px 14px 0 var(--clay);aspect-ratio:4/5;position:relative}
-.founder-photo img{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:105%;max-width:none}
-.founder h2{font-size:clamp(36px,4.6vw,56px);margin:10px 0 18px}
-.founder p{color:var(--soft);margin-bottom:16px}
-.founder .sig{font-family:"Oswald",sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.06em;font-size:22px;color:var(--ink)}
-@media(max-width:860px){.founder .wrap{grid-template-columns:1fr}}
-
-.involved .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{border-radius:2px;padding:36px 30px;display:flex;flex-direction:column;min-height:300px}
-.card h3{font-size:32px;margin:12px 0 10px}
-.card p{flex:1;font-size:16px}
-.card .btn{align-self:flex-start;margin-top:22px}
-.c1{background:var(--clay);color:var(--wood)}.c1 p{color:#10284A}.c1 .btn{background:var(--wood);color:#fff}
-.c2{background:var(--navy);color:#fff}.c2 p{color:#C3CCDD}.c2 .btn{background:#fff;color:var(--ink)}
-.c3{background:var(--card);border:1px solid var(--line)}.c3 p{color:var(--soft)}
-.note{font-size:13px;margin-top:10px;opacity:.85}
-@media(max-width:860px){.involved .grid{grid-template-columns:1fr}}
-
-.vision{background:radial-gradient(ellipse at 50% 0%,#26467A 0%,var(--navy) 55%,#070E1C 100%);color:#fff;text-align:center;padding:120px 0}
-.vision h2{font-size:clamp(34px,4.8vw,62px);max-width:960px;margin:16px auto 34px}
-.vision .eyebrow{color:var(--peach)}
-footer{background:var(--ink);color:#AEB6C6;padding:46px 0;font-size:14px}
-footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
-footer .logo{color:#fff}
+.vision{text-align:center;padding:100px 0}
+.vision h2{font-size:clamp(30px,4vw,48px);line-height:1.2;max-width:900px;margin:14px auto 0}
+footer{background:var(--ink);color:#AEB6C6;padding:40px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 footer .fl{display:flex;gap:22px;flex-wrap:wrap}
+footer .fl a:hover{color:#fff}
 </style>
 </head>
 <body>
 <nav><div class="wrap">
-  <a class="logo" href="#top"><img src="images/lwd-icon.png" alt="" style="height:52px;width:auto"><span>Living With Dignity</span></a>
-  <div class="links"><a href="#problem">Problem</a><a href="#path">How It Works</a><a href="#year">The Year</a><a href="#programs">Programs</a><a href="#believe">Beliefs</a><a href="#founder">Our Story</a></div>
-  <a class="btn primary" href="#involved">Get Involved</a>
+  <a class="logo" href="#top"><img src="images/lwd-icon.png" alt="">Living With Dignity</a>
+  <div class="links"><a href="#problem">Why</a><a href="#year">The Year</a><a href="#story">Our Story</a></div>
+  <a class="btn primary" href="#join">Get Involved</a>
 </div></nav>
 
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="hero-copy">
-      <div class="eyebrow" style="color:var(--peach)">Living With Dignity · A Discipleship &amp; Teaching Ministry for Men</div>
-      <h1>You're worthy of God's love. <span>Most of us are still trying to earn it.</span></h1>
-      <p>We help men know they are worthy of God's love in Christ Jesus, and disciple them to live, lead, and work from that identity, not for it.</p>
-      <div class="ctas">
-        <a class="btn primary" href="#involved">Bring It to Your Church</a>
-        <a class="btn out" href="https://assess.billymetzshow.com" target="_blank" rel="noopener">Take the Free Assessment</a>
-      </div>
+    <img class="mark" src="images/lwd-icon.png" alt="Living With Dignity">
+    <div class="eyebrow">A Discipleship &amp; Teaching Ministry for Men</div>
+    <h1>You're worthy of God's love. <span>Most of us are still trying to earn it.</span></h1>
+    <p>We help men know they are worthy of God's love in Christ Jesus, and disciple them to live, lead, and work from that identity, not for it.</p>
+    <div class="ctas">
+      <a class="btn primary" href="#join">Bring It to Your Church</a>
+      <a class="btn out" href="https://assess.billymetzshow.com" target="_blank" rel="noopener">Take the Free Assessment</a>
     </div>
   </div>
 </header>
@@ -179,138 +120,61 @@ footer .fl{display:flex;gap:22px;flex-wrap:wrap}
   </div>
 </section>
 
-<section class="problem" id="problem">
+<section id="problem">
   <div class="wrap">
-    <div class="intro">
-      <div><div class="eyebrow">The Problem</div><h2>Men are drowning quietly.</h2></div>
-      <p>For years, leading men's Bible studies, I've seen the same thing again and again: <b>successful men who are struggling, with nowhere to name it and no way to measure it.</b></p>
-    </div>
+    <div class="head"><div class="eyebrow">Why We Exist</div><h2>Men are drowning quietly.</h2><p>For years, teaching men's Bible studies, I've seen the same thing again and again: successful men who are struggling, with nowhere to name it and no way to measure it.</p></div>
     <div class="probs">
-      <div class="prob"><div class="tag">Problem 01</div><h3>A discipleship gap</h3><p>Most men aren't being discipled. There's no place to feel what they need to feel, talk honestly about what's really going on, and grow closer to Jesus together. Sunday isn't enough, and most men never get past small talk.</p></div>
-      <div class="prob"><div class="tag">Problem 02</div><h3>No measuring stick</h3><p>There's no assessment, no metric to help a man see what's going on inside. We measure revenue, reps and results, but not the soul.</p><blockquote>When a man says, “I'm struggling here. I'm drowning here,” what is that? What's really there?</blockquote></div>
-    </div>
-    <div class="answer"><b>Our answer:</b>Honest discipleship in brotherhood, and a measuring stick that shows each man where he is today and where he needs to go.</div>
-  </div>
-</section>
-
-<section id="path">
-  <div class="wrap">
-    <div class="head"><div class="eyebrow">How It Works</div><h2>A clear path, walked together.</h2><p>No man grows alone. Every step happens in brotherhood, anchored in Scripture.</p></div>
-    <div class="path">
-      <div class="step"><div class="n">1</div><h3>Assess</h3><p>Take the free Living in Dignity assessment and see where you're rooted, and where you're struggling.</p></div>
-      <div class="step"><div class="n">2</div><h3>Gather</h3><p>Men gather at their local church for Bible teaching, then meet in triads: three men who check in weekly. “Fine” is a banned answer.</p></div>
-      <div class="step"><div class="n">3</div><h3>Train</h3><p>Twelve months, six domains: the Word, emotion training and one practice every week. Retake at month 6 and month 12.</p></div>
-      <div class="step"><div class="n">4</div><h3>Go</h3><p>Lead your own group and disciple the next man. Brotherhood that multiplies.</p></div>
+      <div class="prob"><div class="eyebrow">Problem 01</div><h3>A discipleship gap</h3><p>Most men aren't being discipled. There's no place to feel what they need to feel, talk honestly about what's really going on, and grow closer to Jesus together.</p></div>
+      <div class="prob"><div class="eyebrow">Problem 02</div><h3>No measuring stick</h3><p>There's no assessment, no metric to help a man see what's going on inside.</p><blockquote>When a man says, “I'm drowning here,” what is that? What's really there?</blockquote></div>
     </div>
   </div>
 </section>
 
 <section class="year" id="year">
   <div class="wrap">
-    <div class="head"><div class="eyebrow">The Dignity Year</div><h2>Twelve months. Six domains. One thread.</h2><p>A discipleship and teaching curriculum for local churches, and a year of formation for the man whose worth has been riding on his performance. Each domain gets two months: the first for conviction, the truth heard and believed; the second for practice, the truth lived until it shows.</p></div>
+    <div class="head"><div class="eyebrow">The Dignity Year</div><h2>Twelve months. Six domains.</h2><p>A discipleship and teaching curriculum for local churches. Men meet monthly for teaching and weekly in triads, with the Word, emotion training and one practice each week.</p></div>
     <div class="mv">
-      <div class="m"><div class="tag">Movement I · Months 1–4</div><h3>The Name You Were Given</h3><div class="lvl">Emotion training, Level 1: Name It</div><ol>
-        <li><b>Month 1</b>Identity &amp; Worth: Beloved before achievement</li>
-        <li><b>Month 2</b>Identity &amp; Worth: Settling it where work can't touch it</li>
-        <li><b>Month 3</b>Surrender &amp; Trust: Loosening the grip</li>
-        <li><b>Month 4</b>Surrender &amp; Trust: Waiting without quitting</li></ol></div>
-      <div class="m"><div class="tag">Movement II · Months 5–8</div><h3>The Inner Life &amp; the Scoreboard</h3><div class="lvl">Emotion training, Level 2: Read It &amp; Pause</div><ol>
-        <li><b>Month 5</b>Emotional Honesty: Naming what's actually happening</li>
-        <li><b>Month 6</b>Emotional Honesty: The buried stuff</li>
-        <li><b>Month 7</b>Work &amp; Ambition: Work as worship, held loosely</li>
-        <li><b>Month 8</b>Work &amp; Ambition: Rewriting the scoreboard</li></ol></div>
-      <div class="m"><div class="tag">Movement III · Months 9–12</div><h3>The Life That Flows From It</h3><div class="lvl">Emotion training, Level 3: Dial It &amp; Lead With It</div><ol>
-        <li><b>Month 9</b>Presence &amp; Family: Being where your feet are</li>
-        <li><b>Month 10</b>Presence &amp; Family: The friction at home</li>
-        <li><b>Month 11</b>Cultural Resistance: Standing against the current</li>
-        <li><b>Month 12</b>Cultural Resistance: Sent with a rule of life</li></ol></div>
+      <div class="m"><div class="tag">Months 1–4</div><h3>The Name You Were Given</h3><ul><li>Identity &amp; Worth</li><li>Surrender &amp; Trust</li></ul></div>
+      <div class="m"><div class="tag">Months 5–8</div><h3>The Inner Life</h3><ul><li>Emotional Honesty</li><li>Work &amp; Ambition</li></ul></div>
+      <div class="m"><div class="tag">Months 9–12</div><h3>The Life That Flows From It</h3><ul><li>Presence &amp; Family</li><li>Cultural Resistance</li></ul></div>
     </div>
-    <div class="rtw">
-      <div class="r"><h4>Read It</h4><p>Twelve chapters of <i>Living With Dignity</i>, one per month. Each names the lie that month is built to break.</p></div>
-      <div class="r"><h4>Train It</h4><p>A 90-minute working session opens each month. The weeks between carry the Word, an emotion drill and a practice lived out with two other men.</p></div>
-      <div class="r"><h4>Work It</h4><p>For men in sales, <i>Dignity in Sales</i> runs as a parallel work track: the same dignity, in the language of quota and pipeline.</p></div>
-    </div>
-    <div class="measure">
-      <div class="ms"><b>Week 0</b><span>Entry assessment</span></div>
-      <div class="ms"><b>Week 24</b><span>Mid-year retake</span></div>
-      <div class="ms"><b>Week 48</b><span>Final retake</span></div>
-    </div>
-    <div class="leave">
-      <h3>What a man leaves with</h3>
-      <ul>
-        <li><b>A name he did not earn:</b> worth settled in sonship, off the scoreboard for good.</li>
-        <li><b>Two scores and a story:</b> his Week 0 and Week 48 results, and the distance between them.</li>
-        <li><b>A trained emotional life:</b> he can name an emotion, read it, pause, and lead with it.</li>
-        <li><b>A rule of life:</b> a one-page plan in his own words: his practices, his triad, his guardrails.</li>
-        <li><b>Brothers:</b> an alumni triad that keeps meeting monthly. Nobody grows alone.</li>
-      </ul>
-    </div>
+    <p class="note"><b>Measured, not assumed:</b> every man takes the Living in Dignity assessment at the start, at month 6 and at month 12, and finishes the year with the evidence that he's grown.</p>
   </div>
 </section>
 
-<section class="programs" id="programs">
+<section class="story" id="story">
   <div class="wrap">
-    <div class="head"><div class="eyebrow" style="color:var(--peach)">Programs</div><h2>Where men find their footing.</h2><p>Simple, consistent ways to grow, whether you're just curious or ready to lead.</p></div>
-    <div class="progs">
-      <div class="prog"><div class="tag">Bible Teaching</div><h3>Men's Bible Studies</h3><p>Discipleship and Bible teaching for men through the Living With Dignity curriculum, now launching at local churches: Scripture, honest talk, and practices men actually live out.</p><a href="#year">See the curriculum</a></div>
-      <div class="prog"><div class="tag">Free Tool</div><h3>The Assessment</h3><p>48 questions across six domains: identity &amp; worth, surrender &amp; trust, emotional honesty, work &amp; ambition, presence &amp; family, and cultural resistance. A snapshot, not a grade.</p><a href="https://assess.billymetzshow.com" target="_blank" rel="noopener">Take the assessment</a></div>
-      <div class="prog"><div class="tag">Media</div><h3>The Billy Metz Show</h3><p>Honest conversations with successful men about success, worth and faith. The front door for men who aren't ready for a group yet.</p><a href="https://billymetzshow.com" target="_blank" rel="noopener">Watch the show</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="beliefs" id="believe">
-  <div class="wrap">
-    <div class="intro">
-      <div class="eyebrow">What We Believe</div>
-      <h2>Beloved first. Works second.</h2>
-      <p>Success can give a man stability. It can't give him a name. That was settled at the cross, and spoken over every son who follows Jesus.</p>
-    </div>
-    <div>
-      <div class="b"><h3>Identity before performance</h3><p>Your worth was given, not earned. You were loved before you did anything.</p><small>“See what kind of love the Father has given to us, that we should be called children of God.” 1 John 3:1</small></div>
-      <div class="b"><h3>Adoption, not orphanhood</h3><p>Men don't need more pressure. They need to know whose they are.</p><small>“You have received the Spirit of adoption as sons, by whom we cry, ‘Abba! Father!’” Romans 8:15</small></div>
-      <div class="b"><h3>Growth is a winding road</h3><p>Faith moves forward, sideways, back and forward again. Wherever you are, you're not behind.</p><small>Acts 8, 9, 10 &amp; 16</small></div>
-      <div class="b"><h3>No man grows alone</h3><p>Brotherhood isn't optional. We grow when we're known.</p><small>“As iron sharpens iron, so one man sharpens another.” Proverbs 27:17</small></div>
-    </div>
-  </div>
-</section>
-
-<section class="founder" id="founder">
-  <div class="wrap">
-    <div class="founder-photo"><img src="images/cut-smiling.png" alt="Billy Metz"></div>
+    <div class="story-photo"><img src="images/cut-smiling.png" alt="Billy Metz"></div>
     <div>
       <div class="eyebrow">Our Story</div>
       <h2>Why I started Living With Dignity.</h2>
-      <p>I did the thing you're told will finally make you somebody. Top of my field, money handled, the results to prove it. And I found out success can give you financial stability, and nothing else. It couldn't tell me who I was.</p>
-      <p>Then I learned what Jesus heard before a single miracle: <em>“This is my beloved Son.”</em> Beloved first. Works second. That changed everything.</p>
-      <p>I teach men's Bible studies, and for years I've seen the same thing again and again: successful men, quietly empty, trying to earn what's already been given. Living With Dignity exists so no man has to carry that alone.</p>
+      <p>I did the thing you're told will finally make you somebody. Top of my field, the results to prove it. And I found out success can give you financial stability, and nothing else. It couldn't tell me who I was.</p>
+      <p>Then I learned what Jesus heard before a single miracle: <em>“This is my beloved Son.”</em> Beloved first. Works second.</p>
+      <p>I teach men's Bible studies, and I host The Billy Metz Show. Living With Dignity exists so no man has to carry this alone.</p>
       <div class="sig">Billy Metz, Founder</div>
     </div>
   </div>
 </section>
 
-<section class="involved" id="involved">
+<section class="join" id="join">
   <div class="wrap">
-    <div class="head"><div class="eyebrow">Get Involved</div><h2>There's a place for you here.</h2></div>
-    <div class="grid">
-      <div class="card c1"><div class="eyebrow" style="color:var(--wood)">For Men</div><h3>Find a Study</h3><p>We're launching Living With Dignity at local churches. Get on the list to hear when a study starts near you.</p><a class="btn" href="mailto:hello@livingwithdignity.org">Get on the list</a></div>
-      <div class="card c2"><div class="eyebrow" style="color:var(--peach)">For Churches</div><h3>Partner With Us</h3><p>Bring Living With Dignity to your church: discipleship and Bible teaching for men, the curriculum, and the assessment. We'll help you launch and lead.</p><a class="btn" href="mailto:hello@livingwithdignity.org">Start a conversation</a></div>
-      <div class="card c3"><div class="eyebrow">For Supporters</div><h3>Give</h3><p>Your gift helps us reach, gather and disciple more men, and keep the assessment free.</p><a class="btn navy" href="#">Give today</a><div class="note">Online giving opens once 501(c)(3) status is approved.</div></div>
+    <div class="cards">
+      <div class="card c1"><div class="eyebrow">For Men</div><h3>Find a Study</h3><p>We're launching Living With Dignity at local churches. Get on the list to hear when a study starts near you.</p><a class="btn" href="mailto:hello@livingwithdignity.org">Get on the list</a></div>
+      <div class="card c2"><div class="eyebrow">For Churches</div><h3>Bring It to Your Church</h3><p>Discipleship and Bible teaching for your men: the curriculum, the assessment, and help launching it.</p><a class="btn" href="mailto:hello@livingwithdignity.org">Start a conversation</a></div>
     </div>
   </div>
 </section>
 
 <section class="vision">
   <div class="wrap">
-    <div style="display:flex;justify-content:center;margin-bottom:18px"><img src="images/lwd-logo-white.png" alt="Living With Dignity" style="width:min(420px,80vw);height:auto"></div><div class="eyebrow">Our Vision</div><p style="color:#C9D6EA;font-style:italic;max-width:640px;margin:10px auto 0">“Walk in a manner worthy of the calling to which you have been called.” Ephesians 4:1</p>
+    <div class="eyebrow">Our Vision</div>
     <h2>A generation of men who live from sonship instead of striving: present at home, honest with their brothers, faithful at work, and at peace with God and themselves.</h2>
-    <a class="btn primary" href="#involved">Bring It to Your Church</a>
   </div>
 </section>
 
 <footer><div class="wrap">
-  <div class="logo"><img src="images/lwd-icon-white.png" alt="" style="height:52px;width:auto"><span>Living With Dignity</span></div>
-  <div class="fl"><a href="https://billymetzshow.com" target="_blank" rel="noopener">The Billy Metz Show</a><a href="https://assess.billymetzshow.com" target="_blank" rel="noopener">Assessment</a><a href="mailto:hello@livingwithdignity.org">Contact</a></div>
+  <div style="font-family:Fraunces,serif;font-weight:800;font-size:20px;color:#fff">Living With Dignity</div>
+  <div class="fl"><a href="https://billymetzshow.com">The Billy Metz Show</a><a href="https://assess.billymetzshow.com" target="_blank" rel="noopener">Assessment</a><a href="mailto:hello@livingwithdignity.org">Contact</a></div>
   <div>© 2026 Living With Dignity · Dallas, TX</div>
 </div></footer>
 </body>
